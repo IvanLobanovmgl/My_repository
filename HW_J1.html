@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW_j1</title>
+</head>
+<body>
+    <script>
+
+        // Площадь круга_________________________________________________________
+        const RADIUS = prompt('Введите радиус круга в см');
+        const PI = 3.141592653589793
+        const RADIUS_IS = "Площадь круга: " + PI * (RADIUS**2) + " см"
+        alert(RADIUS_IS)
+
+        // Сколько прошло лет____________________________________________________
+        const OLD_YEAR = prompt('От какого года прошло:')
+        const NOW_IS = prompt('По какой год прошло:')
+        const HAVE_PASSED = 'С ' + OLD_YEAR + ' по ' + NOW_IS + ' прошло ' + (NOW_IS - OLD_YEAR)
+        alert(HAVE_PASSED)
+
+        // Когда на пенсию_______________________________________________________
+        const AGE = prompt('Сколько вам лет?')
+        const AGE_RETIREE = prompt('В каком возрасте выход на пенсию?')
+        const RETIREMENT_IN = AGE_RETIREE - AGE
+        alert('Выход на пенсию через: ' + RETIREMENT_IN + ' лет')
+        
+    </script>
+</body>
+</html>

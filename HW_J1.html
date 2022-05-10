@@ -10,21 +10,20 @@
 
         // Площадь круга_________________________________________________________
         const RADIUS = prompt('Введите радиус круга в см');
-        const PI = 3.141592653589793
-        const RADIUS_IS = "Площадь круга: " + PI * (RADIUS**2) + " см"
+        const RADIUS_IS = "Площадь круга: " + Math.PI * (RADIUS**2) + " см"
         alert(RADIUS_IS)
 
         // Сколько прошло лет____________________________________________________
         const OLD_YEAR = prompt('От какого года прошло:')
         const NOW_IS = prompt('По какой год прошло:')
-        const HAVE_PASSED = 'С ' + OLD_YEAR + ' по ' + NOW_IS + ' прошло ' + (NOW_IS - OLD_YEAR)
-        alert(HAVE_PASSED)
+        const HAVE_PASSED = `С ${OLD_YEAR} по ${NOW_IS} прошло ` + (NOW_IS - OLD_YEAR)
+        alert(HAVE_PASSED + 'года/лет')
 
         // Когда на пенсию_______________________________________________________
         const AGE = prompt('Сколько вам лет?')
         const AGE_RETIREE = prompt('В каком возрасте выход на пенсию?')
         const RETIREMENT_IN = AGE_RETIREE - AGE
-        alert('Выход на пенсию через: ' + RETIREMENT_IN + ' лет')
+        alert(`Выход на пенсию через: ${RETIREMENT_IN} лет`)
         
     </script>
 </body>

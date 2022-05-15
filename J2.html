@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J2</title>
+</head>
+<body>
+    <script>
+
+        // 1.ОБЪЁМ ЦИЛИНДРА______________________________________________________________________________________________________
+        
+/*        const R = +prompt('Введите диаметр основания:', "")/2
+        const H = +prompt('Введите выслту цилиндра:', "");
+        const V = Math.PI * (R*R) * H
+        document.write('Исходные данные:<br>' + 
+                        'R = ' + R + '<br>' +
+                        'H= ' + H + '<br>' + 
+                        'Формула: <b><em>V = PI * R<sup>2</sup> * H</em></b><hr>' +
+                        'Объём цилиндра равен: '+ V);
+*/               
+
+
+
+
+
+        // 2. СРЕДНЯЯ ПРИБЫЛЬ__________________________________________________________________________________________________
+        
+/*         let keys = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+        let obj = {};
+        let values;
+        let averageAmount = 0;
+        for (let i = 0; i <= keys.length-1; i++) {
+            values = prompt('Введите сумму мес. ' + keys[i], '5');
+            obj[keys[i]] = values;
+        };
+
+        document.write('<U>Исходные данные:</U> <br>');
+        for (let key in obj) {
+        document.write(key + ' = ' + obj[key] + '<br>')
+        };
+
+        for (let key in obj) {
+            averageAmount += +(obj[key] == undefined ? 0: obj[key]);
+        };
+        document.write('<hr>Сумма: ' + averageAmount + '<br>');
+        document.write('Средняя прибыль за указанные месяца: ' + averageAmount / 12);
+*/               
+ 
+
+
+
+
+        // 3. АББРЕВИАТУРА_______________________________________________________________________________________________________
+        
+/*        const fio = prompt('Введите ФИО:', 'Ф И О');
+        fio.replace(/^ +| +$|( ) +/g,"$1");
+        let strAbb;
+        strAbb = fio[0];
+        for (let i = 1; i <= fio.length - 2; i++) {
+            if (fio[i] == ' ') {
+                strAbb = strAbb + fio[i+1]
+            };
+        };
+        strAbb = strAbb.split(' ').join('');
+        document.write('<b>Полное имя:</b> ' + fio + '<br><b>Инициалы:</b> ' + strAbb);
+*/            
+        
+
+
+
+
+
+        // 4. ПРИВЕТСТВИЕ_________________________________________________________________________________________________________
+        
+/*       const name = prompt('Введите имя:');
+        alert('Привет, ' + name + '!');
+*/            
+
+
+
+
+
+        // 5. ПЕРИМЕТР КВАДРАТА___________________________________________________________________________________________________
+        
+/*        const L = prompt('Введите длинну стороны квадрата:', "");
+        alert('Периметр квадрата равен ' + L*4);
+*/           
+
+
+
+
+
+        // 6. СКОРОСТЬ____________________________________________________________________________________________________________
+
+/*        const distance = prompt('Введите расстояние, км:', '');
+        const time = prompt('За какое время ходите добраться, ч:', '');
+        alert('Нужно двигаться со скоростью: ' + distance/time + ' км/ч');
+*/            
+        
+        
+
+
+
+        // 7. НАОБОРОТ____________________________________________________________________________________________________________
+
+/*        const number = prompt('Введите трёхзначное число:', '');
+        const third = (number % 10);
+        const second = (number - third) % 100 / 10;
+        const first = number - ((number - third) % 100) - third;
+        const outcom = (String(third) + second + first / 100);
+        alert(outcom);
+*/           
+       
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HW_J5</title>
+</head>
+<body class="body">
+    <div id="container">
+        <div class="changeTask" style="display: block">
+            <div id="changeTask_1"><button class="styleButton">Task 1</button></div><br>
+            <div id="changeTask_2"><button class="styleButton">Task 2</button></div><br>
+            <div id="changeTask_3"><button class="styleButton">Task 3</button></div><br>
+            <div id="changeTask_4"><button class="styleButton">Task 4</button></div><br>
+            <div id="changeTask_all"><button class="styleButton">All</button></div>
+        </div>
+
+        <!-- TASK_1 DNA -->
+        <div class="Task_1" style="display: block;">
+            <p class="taskName">TASK_1_DNA</p><br>
+            <input id="inputData" placeholder="Enter DNA symbol">
+            <button id="button">Get another side</button>
+            <div class="pResult resultTask_1"></div>
+        </div>
+        
+
+        <!-- TASK_2 The most short word -->
+        <div class="Task_2" style="display: none;">
+            <p class="taskName">TASK_2_The most short word</p><br>
+            <input id="inputString" placeholder="Enter string">
+            <button id="buttonString">Calculate</button>
+            <div class="pResult resultTask_2"></div>
+        </div>
+
+
+        <!-- TASK_3 Your order -->
+        <div class="Task_3" style="display: none;">
+            <p class="taskName">TASK_3_Your order</p><br>
+            <input id="input_Words_With_Number" placeholder="Enter string">
+            <button id="button_Words_With_Number">Calculate</button>
+            <div class="pResult resultTask_3"></div>
+        </div>
+
+
+        <!-- TASK_4 Receipt -->
+        <div class="Task_4" style="display: none;">
+            <p class="taskName">TASK_4_Receipt</p><br>
+            <input id="productName" placeholder="Enter product name">
+            <input id="count" placeholder="Enter count">
+            <input id="price" placeholder="Enter price">
+            <button id="buttonAddGoods">Add good</button>
+            <div class="pResult resultTask_receipt"></div>
+        
+
+            <div id="receipt">
+                <p>Receipt</p>
+                <div id="receiptGoodName" class="receiptChild">
+                    <p>Goods name</p>
+                </div>
+                <div id="receiptGoodCount" class="receiptChild">
+                    <p>Count</p>
+                </div>
+                <div id="receiptGoodPrice" class="receiptChild">
+                    <p>Price</p>
+                </div>
+                <div id="footer">
+                    <p id="summPrice"></p>
+                    <p id="maxPrice"></p>
+                    <p id="severalPrise"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>

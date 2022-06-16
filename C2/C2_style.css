@@ -1,0 +1,242 @@
+/*! _____________________________________________________________COLORS */
+.black.elephant,
+.black.elephant::before,
+.black.elephant::after,
+.black.tour,
+.black.tour::before,
+.black.tour::after,
+.black.pawn::before,
+.black.pawn::after,
+.black.king::after,
+.black.queen,
+.black.queen::before,
+.black.queen::after,
+.black.horse,
+.black.horse::before,
+.black.horse::after {
+    background-color: rgb(37, 36, 36);
+}
+.white.elephant,
+.white.elephant::before,
+.white.elephant::after,
+.white.tour,
+.white.tour::before,
+.white.tour::after,
+.white.pawn::before,
+.white.pawn::after,
+.white.king::after,
+.white.queen,
+.white.queen::before,
+.white.queen::after,
+.white.horse,
+.white.horse::before,
+.white.horse::after  {
+    background-color: rgb(219, 210, 210);
+}
+
+.black.king::before {
+    color: rgb(37, 36, 36);
+}
+.white.king::before {
+    color: rgb(219, 210, 210);
+}
+
+.black.pawn,
+.black.king {
+    border-bottom-color: rgb(37, 36, 36);
+}
+.white.pawn,
+.white.king {
+    border-bottom-color: rgb(219, 210, 210);
+}
+
+.odd td:nth-child(2n+1) {
+    background-color: beige;
+}
+.even td:nth-child(2n) {
+    background-color: beige;
+}
+
+/*! _____________________________________________________________HORSE */
+.horse {
+    height: 50px;
+    width: 30px;
+    margin: auto;
+}
+.horse::before {
+    content: ' ';
+    width: 45px;
+    height: 25px;
+    display: block;
+    position: relative;
+    top: -10px;
+    left: 0px;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 50%;
+}
+.horse::after {
+    content: ' ';
+    width: 55px;
+    height: 20px;
+    display: block;
+    position: relative;
+    top: 15px;
+    left: -12px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+/*! _____________________________________________________________QUEEN */
+.queen {
+    height: 45px;
+    width: 20px;
+    margin: auto;
+}
+.queen::before {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    top: -15px;
+    left: -0px;
+    border-radius: 50%;
+}
+.queen::after {
+    content: ' ';
+    width: 45px;
+    height: 20px;
+    display: block;
+    position: relative;
+    top: -25px;
+    left: -12px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/*! _____________________________________________________________ELEPHANT */
+.elephant {
+    height: 30px;
+    width: 20px;
+    margin: auto;
+}
+.elephant::before {
+    content: ' ';
+    width: 30px;
+    height: 45px;
+    display: block;
+    position: relative;
+    top: -25px;
+    left: -5px;
+    border-radius: 50%;
+}
+.elephant::after {
+    content: ' ';
+    width: 45px;
+    height: 20px;
+    display: block;
+    position: relative;
+    top: -20px;
+    left: -12px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/*! _____________________________________________________________TOUR */
+.tour {
+    height: 50px;
+    width: 30px;
+    margin: auto;
+}
+.tour::before {
+    content: ' ';
+    width: 45px;
+    height: 25px;
+    display: block;
+    position: relative;
+    top: -10px;
+    left: -8.5px;
+    border-radius: 20px;
+}
+.tour::after {
+    content: ' ';
+    width: 55px;
+    height: 20px;
+    display: block;
+    position: relative;
+    top: 15px;
+    left: -12px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+/*! _____________________________________________________________PAWN */
+
+.pawn {
+    height: 0px;
+    width: 0px;
+    margin: auto;
+    border-left: 20px  solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom-width: 55px;
+    border-bottom-style: solid;
+}
+.pawn::before {
+    content: ' ';
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: relative;
+    top: -10px;
+    left: -15px;
+    border-radius: 50%;
+}
+
+.pawn::after {
+    content: ' ';
+    width: 25px;
+    height: 5px;
+    display: block;
+    position: relative;
+    top: 25px;
+    left: -12.5px;
+}
+
+/*! _____________________________________________________________KING */
+td {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgb(36, 5, 5);
+    background-color: rgb(23, 9, 36);
+}
+.king {
+    height: 0px;
+    width: 0px;
+    margin: auto;
+    border-left: 20px  solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom-width: 55px;
+    border-bottom-style: solid;
+}
+.king::before {
+    content: '᛭';
+    font-size: 30px;
+    font-weight: 800;
+    display: block;
+    position: relative;
+    top: -25px;
+    left: -10px;
+}
+.king::after {
+    content: ' ';
+    width: 30px;
+    height: 10px;
+    display: block;
+    position: relative;
+    top: -40px;
+    left: -15px;
+    border-radius: 12px;
+}
